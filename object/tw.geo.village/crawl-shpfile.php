@@ -56,9 +56,6 @@ if (!preg_match('#<gs-request-token value="([^"]*)"></gs-request-token>#', $resp
     throw new Exception('No token found');
 }
 $token = $matches[1];
-if (!file_exists(__DIR__ . '/shapefiles')) {
-    mkdir(__DIR__ . '/shapefiles');
-}
 
 curl_setopt($curl, CURLOPT_URL, 'https://segis.moi.gov.tw/STATCloud/reqcontroller.go');
 $params = [
