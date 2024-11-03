@@ -21,3 +21,4 @@
 - 執行 ```php split-version.php``` 將 outputs/object.csv 依照版本存入 outputs/versions/ 內
 - 執行 ```git clone git@github.com:ronnywang/segis-village``` 將 segis-village repo clone 到 segis-village/ 資料夾
 - 執行 ```php export-to-segis-village.php``` 將 outputs/object.csv 的結果轉換成 segis-village/history.jsonl
+- 執行 ```sh upload.sh``` 將 outputs/log.csv, outputs/object.csv, outputs/versions/ 等資料上傳到 huggingface
